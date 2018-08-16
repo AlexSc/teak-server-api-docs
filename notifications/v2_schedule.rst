@@ -1,5 +1,5 @@
-Server Initiated Notification Sending
-=====================================
+Direct Notification Scheduling
+==============================
 
 :Endpoint: https://api.gocarrot.com/v2/schedule
 :Request Type: POST
@@ -9,6 +9,8 @@ Server Initiated Notification Sending
 Description: The v2/schedule endpoint allows for bulk scheduling of notifications to be delivered within 30 days. For simplicity this endpoint takes an identifier and message for the notification message to do initial Dashboard setup automatically. If the notification message already exists in the Dashboard this endpoint will not update the content of the notification message.
 
 Notification Schedules created by this endpoint will be Local send types, and will deliver to the user's most recently used device at the time of sending.
+
+This endpoint is appropriate for use when users whom the notification should be sent to change frequently or when notifications need to be sent to different users at different times.
 
 Required Parameters
 -------------------
