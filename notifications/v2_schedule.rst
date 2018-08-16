@@ -16,7 +16,7 @@ Required Parameters
 :game_id: Your Teak App ID
 :secret_key: Your Teak Server Secret
 :notification_identifier: The identifier of the notification in the dashboard. Will be created if not present.
-:notification_message: The default message of the notification on all platforms. If the notification already exists, its message will not be updated
+:notification_message: The default message of the notification on all platforms. If the notification already exists, its message will not be updated. Limited to 160 characters.
 :user_ids: Array of Game Assigned Player IDs to send the notification to. Maximum of 100 per call. If you need to schedule the notification for more users, make additional calls.
 
 Optional Parameters
