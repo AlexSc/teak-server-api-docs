@@ -7,14 +7,17 @@ Welcome to Teak Server API's documentation!
 ===========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :caption: Teak Documentation
+    :maxdepth: 2
+    :hidden:
 
+    Home <https://teak.readthedocs.io/en/latest/>
+    Adobe AIR <https://teak.readthedocs.io/projects/air/en/latest/index.html>
+    Unity <https://teak.readthedocs.io/projects/unity/en/latest/index.html>
 
+.. toctree::
+    :caption: Server API
+    :maxdepth: 2
+    :hidden:
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    notifications/v2_schedule
