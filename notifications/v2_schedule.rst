@@ -4,12 +4,11 @@ Server Initiated Notification Sending
 :Endpoint: https://api.gocarrot.com/v2/schedule
 :Request Type: POST
 :Content-Type: application/json
+:Rate Limiting: 30 requests per second
 
 Description: The v2/schedule endpoint allows for bulk scheduling of notifications to be delivered within 30 days. For simplicity this endpoint takes an identifier and message for the notification message to do initial Dashboard setup automatically. If the notification message already exists in the Dashboard this endpoint will not update the content of the notification message.
 
 Notification Schedules created by this endpoint will be Local send types, and will deliver to the user's most recently used device at the time of sending.
-
-Rate Limiting: 30 requests per second.
 
 Required Parameters
 -------------------
