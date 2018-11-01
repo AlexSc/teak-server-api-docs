@@ -6,14 +6,8 @@
 Teak Server APIs
 ================
 
-.. toctree::
-    :caption: Teak Documentation
-    :maxdepth: 2
-    :hidden:
 
-    Home <https://teak.readthedocs.io/en/latest/>
-    Adobe AIR <https://teak.readthedocs.io/projects/air/en/latest/index.html>
-    Unity <https://teak.readthedocs.io/projects/unity/en/latest/index.html>
+.. include:: teak-docs-common/sidebar-top.rst
 
 .. toctree::
     :caption: Server API
@@ -21,3 +15,5 @@ Teak Server APIs
     :hidden:
 
     notifications/v2_schedule
+
+.. include:: teak-docs-common/sidebar.rst
