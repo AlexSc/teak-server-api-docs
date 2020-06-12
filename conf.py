@@ -186,4 +186,4 @@ texinfo_documents = [
 
 # -- Sidebar --------------------------------------------------------------
 
-docs_common.generate_sidebar(globals(), 'unity', './_sidebar.rst.inc')
+docs_common.generate_sidebar(globals(), 'server', './_sidebar.rst.inc')
