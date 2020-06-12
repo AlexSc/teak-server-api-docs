@@ -6,14 +6,4 @@
 Teak Server APIs
 ================
 
-
-.. include:: teak-docs-common/sidebar-top.rst
-
-.. toctree::
-    :caption: Server API
-    :maxdepth: 2
-    :hidden:
-
-    notifications/v2_schedule
-
-.. include:: teak-docs-common/sidebar.rst
+.. include:: _sidebar.rst.inc
