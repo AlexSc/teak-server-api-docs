@@ -22,6 +22,15 @@
 import os
 import subprocess
 
+read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
+
+import importlib
+import sys
+
+sys.path.append('.')
+
+docs_common = importlib.import_module('teak-docs-common')
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -31,7 +40,10 @@ import subprocess
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ ]
+extensions = [ 'sphinx.ext.intersphinx' ]
+
+# Intersphinx
+intersphinx_mapping = docs_common.intersphinx_mapping(globals())
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -172,5 +184,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+# -- Sidebar --------------------------------------------------------------
 
-
+docs_common.generate_sidebar(globals(), 'unity', './_sidebar.rst.inc')
