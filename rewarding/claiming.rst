@@ -11,7 +11,7 @@ When the game loads, if there is a teak_reward_id present in the query parameter
 Our SDK will make a call into the Teak backend to confirm that user is eligible to receive this reward. If so, two things will happen simultaneously
 
 * The callback given will be called
-* Teak will make a POST request to your backend as described in our :doc:`rewarding/endpoint` documentation.
+* Teak will make a POST request to your backend as described in our :doc:`endpoint` documentation.
 
 .. highlight:: json
 
