@@ -7,3 +7,4 @@ Teak Server APIs
 
     notifications/v2_schedule
     rewarding/endpoint
+    rewarding/claiming
