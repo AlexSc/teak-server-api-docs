@@ -35,13 +35,19 @@ Success Response
 
 Error Responses
 --------------
+
+Not Found
+^^^^^^^^^
+:Status Code: 404
+:Response Body: JSON dictionary with 'status' and 'errors' keys. 'status' will be 'error'. 'errors' will be a dictionary in which the keys are the parameter which could not be found, and the values will be an array of human readable messages indicating what could not be found.
+:Example: ``{"status":"error","errors":{"game_id":["Unknown app id 42"]}}``
+
+Validation Error
+^^^^^^^^^^^^^^^^
 :Status Code: 422
 :Response Body: JSON dictionary with 'status' and 'errors' keys. 'status' will be 'error'. 'errors' will be a dictionary in which the keys are the parameter which failed to meet requirements, and the values will be an array of human readable messages for failed validations.
 :Example: ``{"status":"error","errors":{"notification_identifier":["must be present"]}}``
 
-:Status Code: 404
-:Response Body: JSON dictionary with 'status' and 'errors' keys. 'status' will be 'error'. 'errors' will be a dictionary in which the keys are the parameter which could not be found, and the values will be an array of human readable messages indicating what could not be found.
-:Example: ``{"status":"error","errors":{"game_id":["Unknown app id 42"]}}``
 
 Rate Limit Response
 -------------------
