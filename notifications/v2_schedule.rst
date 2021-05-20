@@ -35,7 +35,7 @@ Success Response
 
 Error Response
 --------------
-:Status Code: 424
+:Status Code: 422
 :Response Body: JSON dictionary with 'status' and 'errors' keys. 'status' will be 'error'. 'errors' will be a dictionary in which the keys are the parameter which failed to meet requirements, and the values will be an array of human readable messages for failed validations.
 :Example: ``{"status":"error","errors":{"notification_identifier":["must be present"]}}``
 
