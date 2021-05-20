@@ -33,11 +33,15 @@ Success Response
 :Response Body: JSON dictionary with 'status' and 'ids' keys. 'status' will be 'ok'. 'ids' will contain an array of strings which are opaque ids for the deliveries scheduled. Every delivery will have a unique id.
 :Example: ``{"status":"ok", "ids":["12904919075210912"]}``
 
-Error Response
+Error Responses
 --------------
 :Status Code: 422
 :Response Body: JSON dictionary with 'status' and 'errors' keys. 'status' will be 'error'. 'errors' will be a dictionary in which the keys are the parameter which failed to meet requirements, and the values will be an array of human readable messages for failed validations.
 :Example: ``{"status":"error","errors":{"notification_identifier":["must be present"]}}``
+
+:Status Code: 404
+:Response Body: JSON dictionary with 'status' and 'errors' keys. 'status' will be 'error'. 'errors' will be a dictionary in which the keys are the parameter which could not be found, and the values will be an array of human readable messages indicating what could not be found.
+:Example: ``{"status":"error","errors":{"game_id":["Unknown app id 42"]}}``
 
 Rate Limit Response
 -------------------
