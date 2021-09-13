@@ -26,7 +26,7 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 import importlib
 import sys
-from datetime import da
+from datetime import date
 today = date.today()
 
 sys.path.append('.')
