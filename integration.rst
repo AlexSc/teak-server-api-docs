@@ -6,5 +6,6 @@ Teak Server APIs
     :maxdepth: 1
 
     notifications/v2_schedule
+    notifications/v2_scheduled_notifications
     rewarding/endpoint
     rewarding/claiming
