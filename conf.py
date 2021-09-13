@@ -26,6 +26,8 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 import importlib
 import sys
+from datetime import da
+today = date.today()
 
 sys.path.append('.')
 
@@ -59,7 +61,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Teak Server API'
-copyright = u'2017-2018, Teak.io Inc'
+copyright = f'2017-{today.year}, Teak.io Inc'
 author = u'Teak'
 
 # The version info for the project you're documenting, acts as replacement for
