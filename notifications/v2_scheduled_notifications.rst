@@ -36,6 +36,7 @@ Required Parameters
 Conditionally Required Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 When send_type is "later"
+
 :send_time: Specifies when the Schedule will send the Message to the Audience. Must be an ISO8601 UTC timestamp, e.g. 2021-10-01T17:00:00Z, for a time in the future.
 
 Optional Parameters
