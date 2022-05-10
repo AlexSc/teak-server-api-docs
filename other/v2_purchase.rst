@@ -5,7 +5,7 @@ Purchase Reporting
 :Request Type: POST
 :Content-Type: application/json or application/x-www-form-urlencoded
 
-Description: The v/2purchase endpoint allows for server to server reporting of in game purchases or withdrawals. This endpoint should only be used if the game is not using standard platform in-app purchasing flows through Facebook Payments, the iOS App Store, Google Play, or the Amazon App Store.
+Description: The v2/purchase endpoint allows for server to server reporting of in game purchases or withdrawals. This endpoint should only be used if the game is not using standard platform in-app purchasing flows through Facebook Payments, the iOS App Store, Google Play, or the Amazon App Store.
 
 Required Parameters
 -------------------
