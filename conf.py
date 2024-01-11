@@ -189,3 +189,9 @@ texinfo_documents = [
 # -- Sidebar --------------------------------------------------------------
 
 docs_common.generate_sidebar(globals(), 'server', './_sidebar.rst.inc')
+
+# -- Redirects ------------------------------------------------------------
+
+redirects = {
+    "notifications/v2_schedule": "https://docs.teak.io/server-api/latest/notifications/v2_schedule.html"
+}
