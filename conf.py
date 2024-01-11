@@ -193,5 +193,9 @@ docs_common.generate_sidebar(globals(), 'server', './_sidebar.rst.inc')
 # -- Redirects ------------------------------------------------------------
 
 redirects = {
-    "notifications/v2_schedule": "https://docs.teak.io/server-api/latest/notifications/v2_schedule.html"
+    "notifications/v2_schedule": "https://docs.teak.io/server-api/latest/notifications/v2_schedule.html",
+    "notifications/v2_scheduled_notifications": "https://docs.teak.io/server-api/latest/notifications/v2_scheduled_notifications.html",
+    "rewarding/claiming": "https://docs.teak.io/server-api/latest/rewards/claiming.html",
+    "rewarding/endpoint": "https://docs.teak.io/server-api/latest/rewards/endpoint.html",
+    "other/v2_purchase": "https://docs.teak.io/server-api/latest/other/v2_purchase.html"
 }
