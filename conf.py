@@ -42,7 +42,7 @@ docs_common = importlib.import_module('teak-docs-common')
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ 'sphinx.ext.intersphinx' ]
+extensions = [ 'sphinx.ext.intersphinx', 'sphinx_reredirects' ]
 
 # Intersphinx
 intersphinx_mapping = docs_common.intersphinx_mapping(globals())
